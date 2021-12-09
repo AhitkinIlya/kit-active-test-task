@@ -1,0 +1,98 @@
+.form-block-registration {
+    display: flex;
+    align-items: center;
+    background: #24292e;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+    border-radius: 27px;
+    padding: 41px 45px;
+    margin: auto;
+    height: 450px;
+}
+.form-require {
+    position: relative;
+    color: #797EA3;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    opacity: .6;
+    margin-top: 8px;
+    margin-bottom: 15px;
+
+    &:before {
+        content: '*';
+        position: absolute;
+        width: 7px;
+        height: 18px;
+        margin-left: -8px;  
+    }
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &:not(:first-child) {
+        margin-top: 38px;
+    }
+}
+.form-input-control {
+    border: none;
+    border-bottom: 1px solid #3F4363;
+    outline: none;
+    background-color: transparent;
+    height: 27px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: 400;
+    margin-top: 7px;
+
+    &:focus {
+        border-bottom: 1px solid #FFFFFF;
+    }
+}
+.form-label-input {
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+}
+label[for="name"]::after,
+label[for="password"]::after,
+label[for="email"]::after,
+label[for="password2"]::after {
+    content: '*';
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    margin-left: 3px;
+    color: #FFFFFF;
+}
+.form-btn {
+    background: #2C2F47;
+    border-radius: 28px;
+    height: 45px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 25px;
+}
+
+.form-block-text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.form-text {
+    color: #ffff;
+}
+
+.form-link {
+    color: #0095f6;
+}

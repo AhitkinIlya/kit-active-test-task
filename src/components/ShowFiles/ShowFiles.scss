@@ -1,0 +1,147 @@
+.showFiles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.showFiles-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.showFiles-listItem {
+    list-style: none;
+}
+
+.showFiles-block {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 7px 10px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.showFiles-name {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+.showFiles-text {
+    font-size: 20px;
+    color: #0095f6;
+    margin-left: 3px;
+}
+
+.showFiles-size {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.showFiles-type {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.showFiles-date {
+    font-size: 15px;
+    color: #0095f6;
+    margin-left: 3px;
+}
+
+.showFiles-info {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5px;
+}
+
+.showFiles-btns {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.showFiles-button {
+    padding: 10px;
+}
+
+.showFiles-btn {
+    width: 100%;
+    padding: 15px 15px;
+    background-color: #e32929;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+
+    &.btn-download {
+        background-color: #29e358;
+    }
+}
+
+.showFiles-post {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.showFiles-countInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.showFiles-count {
+    display: flex;
+}
+
+.showFiles-access {
+    margin: 0 5px;
+}
+
+.showFiles-error {
+    margin: 0 5px;
+    color: #e32929;
+}
+
+.showFiles-noneBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    height: 120px;
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 1 / 20%);
+}
+
+.showFiles-noneText {
+    font-size: 25px;
+    color: #0095f6;
+    margin-bottom: 25px;
+}
+
+.showFile-noneLink {
+    background-color: #77eb94;
+    padding: 10px 10px 0px 10px;
+    font-size: 23px;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+}

@@ -1,0 +1,111 @@
+.dropZone {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.dropZone-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.dropZone-listItem {
+    list-style: none;
+}
+
+.dropZone-block {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 7px 10px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.dropZone-name {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+.dropZone-size {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.dropZone-type {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.dropZone-text {
+    font-size: 20px;
+    color: #0095f6;
+    margin-left: 3px;
+}
+
+.dropZone-info {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5px;
+}
+
+.dropZone-button {
+    width: 100px;
+    margin-left: 40px;
+}
+
+.dropZone-btn {
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #e32929;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+
+    &.btn-post {
+        background-color: #0095f6;
+        padding: 17px 17px;
+        
+    }
+}
+
+.dropZone-post {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.dropZone-countInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.dropZone-count {
+    display: flex;
+}
+
+.dropZone-access {
+    margin: 0 5px;
+}
+
+.dropZone-error {
+    margin: 0 5px;
+    color: #e32929;
+}

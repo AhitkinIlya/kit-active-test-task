@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Marvin';
+  src: url(./assets/fonts/marvin-webfont.woff) format('woff'),
+       url(./assets/fonts/marvin-webfont.woff2) format('woff2')
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif, Marvin;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ebebeb;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
