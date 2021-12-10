@@ -92,6 +92,8 @@ const DropZone = ({files, addFilesPreview, deleteFilePreview, postFiles, current
         }
         if (count > 1) {
             setIsSize(false)
+        } else {
+            setIsSize(true)
         }
         count = count.toFixed(2)
         setCurrentSize(count)

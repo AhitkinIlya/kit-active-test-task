@@ -77,9 +77,11 @@ export const login = (email, password) => async dispatch => {
         type: LOGIN_SUCCESS,
         payload: res.data
       })
+
+      setAuthToken(localStorage.getItem('token'))
+
       dispatch(setAlert('Вы успешно вошли в аккаунт', 'primary'))
     } catch (error) {
-      console.log('error', error)
       const messageError = error.response.data.message
       dispatch(setAlert(messageError, 'danger'))
     }

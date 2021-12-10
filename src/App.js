@@ -5,12 +5,10 @@ import RegistrationForm from './components/RegistrationForm'
 import LoginForm from './components/LoginForm'
 import NotFound from './components/NotFound'
 import Alert from './components/Alert'
-import Pagination from './components/Pagination'
-import PrivateRoute from './components/routing/PrivateRoute'
-import Header from './components/Header'
 import store from './store'
 import { loadApp } from './actions/auth'
 import './App.css';
+import MainLayout from './components/Layout/MainLayout';
 
 function App() {
   //Подготовка приложения для корректной работы
@@ -22,21 +20,14 @@ function App() {
     <Provider store={store}>
       <div className="app">
         <Router>
-          <Header />
           <Alert />
-          <div className="container">
-            <Routes>
-              <Route exact path="/" element={ <PrivateRoute /> }>
-                <Route exact path="/" element={ <Pagination /> } />
-              </Route>
-              <Route exact path="/viewing" element={ <PrivateRoute /> }>
-                <Route exact path="/viewing" element={ <Pagination /> } />
-              </Route>
-              <Route exact path="/registration" element={ <RegistrationForm /> } />
-              <Route exact path="/login" element={ <LoginForm /> } />
-              <Route path="*" element={ <NotFound /> } />
-            </Routes>
-          </div>
+          <Routes>
+            <Route exact path="/" element={ <MainLayout /> } />
+            <Route exact path="/viewing" element={ <MainLayout /> } />
+            <Route exact path="/registration" element={ <RegistrationForm /> } />
+            <Route exact path="/login" element={ <LoginForm /> } />
+            <Route path="*" element={ <NotFound /> } />
+          </Routes>
         </Router>
       </div>
     </Provider>
